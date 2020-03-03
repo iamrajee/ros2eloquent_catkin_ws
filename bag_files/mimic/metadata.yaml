@@ -1,0 +1,21 @@
+rosbag2_bagfile_information:
+  version: 2
+  storage_identifier: sqlite3
+  relative_file_paths:
+    - mimic/mimic_0.db3
+  duration:
+    nanoseconds: 17279904850
+  starting_time:
+    nanoseconds_since_epoch: 1583244081020793480
+  message_count: 1042
+  topics_with_message_count:
+    - topic_metadata:
+        name: /turtlesim2/turtle1/cmd_vel
+        type: geometry_msgs/msg/Twist
+        serialization_format: cdr
+      message_count: 1025
+    - topic_metadata:
+        name: /turtlesim1/turtle1/cmd_vel
+        type: geometry_msgs/msg/Twist
+        serialization_format: cdr
+      message_count: 17
