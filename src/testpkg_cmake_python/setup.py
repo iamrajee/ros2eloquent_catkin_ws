@@ -22,7 +22,8 @@ setup(
         'console_scripts': [
             'py_node = testpkg_cmake_python.py_node:main',
             'py_node2 = testpkg_cmake_python.py_node2:main',
-            'py_node3.py = testpkg_cmake_python.py_node3:main'
+            'py_node3.py = testpkg_cmake_python.py_node3:main',
+            'py_node5.py = testpkg_cmake_python.py_node5:main'
         ],
     },
 )

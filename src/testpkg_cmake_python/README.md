@@ -11,7 +11,7 @@ setup.cfg                  => testpkg_cmake_python(changed variable name)
 # ======= Changes in package.xml ===========
 added <build_type>ament_python</build_type> and many more
 
-# ======= Changes in CMakelist (Not required!) ===========
+# ======= Changes in CMakelist (Not required!) ========
 ament_python_install_package(${PROJECT_NAME})
 install(PROGRAMS ${PROJECT_NAME}/py_node2.py DESTINATION lib/${PROJECT_NAME})
 and many more ...

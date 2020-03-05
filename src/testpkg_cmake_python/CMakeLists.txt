@@ -35,13 +35,20 @@ find_package(ament_cmake REQUIRED)
 ### # Install python scripts
 ### # install(PROGRAMS scripts/my_executable DESTINATION bin)
 ### # install(PROGRAMS ${PROJECT_NAME}/py_node2.py DESTINATION bin)
-### install(PROGRAMS ${PROJECT_NAME}/py_node2.py DESTINATION lib/${PROJECT_NAME}) #runtime error ?? <======================================== ??
+### # install(PROGRAMS ${PROJECT_NAME}/py_node2.py DESTINATION lib/${PROJECT_NAME})                    #<=== runtime error ???
+### # install(TARGETS ${PROJECT_NAME} DESTINATION "${PYTHON_INSTALL_DIR}/${PROJECT_NAME}")             #<=== not a target
+### # install(TARGETS ${PROJECT_NAME}/py_node4.py DESTINATION "${PYTHON_INSTALL_DIR}/${PROJECT_NAME}") #<=== not a target
+### # install(PROGRAMS ${PROJECT_NAME}/py_node4.py DESTINATION "${PYTHON_INSTALL_DIR}/${PROJECT_NAME}")  #<=== does nothing
+### # install(PROGRAMS ${PROJECT_NAME}/py_node5.py DESTINATION bin) 
+### # add_executable(py_node5.py ${PROJECT_NAME}/py_node5.py)
+### # # ament_target_dependencies(py_node5.py rclpy)
+### # install(TARGETS py_node5.py DESTINATION "${PYTHON_INSTALL_DIR}/${PROJECT_NAME}")
+### # install(PROGRAMS ${PROJECT_NAME}/py_node5.py DESTINATION bin) #no effect
+### # install(PROGRAMS ${PROJECT_NAME}/py_node5.py DESTINATION lib/${PROJECT_NAME})
 
 add_executable(cpp_node src/cpp_node.cpp)
 target_include_directories(cpp_node PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include> $<INSTALL_INTERFACE:include>)
 install(TARGETS cpp_node EXPORT export_${PROJECT_NAME} DESTINATION lib/${PROJECT_NAME})
-
-
 
 ### # Export package dependencies
 ### ament_export_dependencies(ament_cmake)
