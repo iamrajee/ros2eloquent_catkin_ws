@@ -18,7 +18,7 @@ endif()
 
 
 
-catkin_install_python()
+# catkin_install_python()
 
 
 # find dependencies

@@ -9,6 +9,7 @@ def generate_launch_description():
             node_namespace='turtlesim1',
             node_executable='turtlesim_node',
             node_name='sim'
+	    #ros_args=''
         ),
         Node(
             package='turtlesim',

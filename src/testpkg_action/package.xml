@@ -27,9 +27,12 @@
   <exec_depend>rclpy</exec_depend>
 
   <!-- <exec_depend>testpkg_action</exec_depend> -->
+  <!-- <depend>testpkg_action</depend> -->
+  <depend>action_tutorials_interfaces</depend>
+
 
   <export>
-    <build_type>ament_cmake</build_type>
-    <!-- <build_type>ament_python</build_type> -->
+    <!-- <build_type>ament_cmake</build_type> -->
+    <build_type>ament_python</build_type>
   </export>
 </package>

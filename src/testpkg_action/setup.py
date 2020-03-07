@@ -21,7 +21,8 @@ setup(
     entry_points={
         'console_scripts': [
             'py_node = testpkg_action.py_node:main',
-            'fibonacci_action_server = testpkg_action.fibonacci_action_server:main'
+            'fibonacci_action_server = testpkg_action.fibonacci_action_server:main',
+            'fibonacci_action_client = testpkg_action.fibonacci_action_client:main'
         ],
     },
 )
