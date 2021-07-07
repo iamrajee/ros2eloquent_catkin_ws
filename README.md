@@ -6,7 +6,7 @@
 [![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-blue.svg)](https://www.firsttimersonly.com/)
 --->
 
-This ROS2 eloquent workspace is created on Ubuntu 18.04.  Here I have worked on some ros2 related projects.Note Its simple named catkin_ws however it is not build using catkin tool. Here we are using ament and colcon tools for building.
+This ROS2 eloquent workspace is created on Ubuntu 18.04.  Here I have worked on some ros2 related projects.Note It is simple named catkin_ws however it is not build using catkin tool. Here we are using ament and colcon tools for building.
 <br/><br/>
 
 ## Table of content
